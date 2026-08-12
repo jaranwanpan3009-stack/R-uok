@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันแม่</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .text-pulse {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #d63384;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8),
+                         0 0 20px rgba(214, 51, 132, 0.4);
+            /* กำหนด Animation ขยายใหญ่แล้วย่อเล็ก */
+            animation: pulse 2.5s infinite ease-in-out;
+            display: inline-block;
+        }
+
+        /* สร้างเอฟเฟกต์ย่อ-ขยาย */
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.5); /* ขยายใหญ่ขึ้น 1.5 เท่า */
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.8); /* ย่อเล็กลง */
+                opacity: 0.7;
+            }
+        }
+
+        .sub-text {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #4a4a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-pulse">
+            💙 รักแม่ที่สุดในสามโลก 💙
+        </div>
+        <p class="sub-text">สุขสันต์วันแม่ครับ/ค่ะ</p>
+    </div>
+
+</body>
+</html>
